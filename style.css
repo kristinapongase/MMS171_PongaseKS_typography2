@@ -1,0 +1,93 @@
+
+  @font-face {
+    font-family: Amoresa;
+    src: url(fonts/Amoresa.ttf);
+  }
+
+  @font-face {
+    font-family: LeJourSerif;
+    src: url(fonts/LeJourSerif.ttf);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffc7e5;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px; 
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+  }
+
+  /* Header Layout */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3d3d3d;
+  }
+
+  .text {
+    font-family: LeJourSerif;
+    font-size: 96.1px;
+    line-height: 1.1;
+    letter-spacing: -36;
+    color: #3d3d3d;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+  }
+
+  .text .highlight {
+    font-family: Amoresa;
+    font-style: italic;
+    text-shadow: 1px 0 7px #3d3d3d;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+  }
+
+  .text .consent {
+    font-family: Amoresa;
+    text-shadow: 1px 0 7px #3d3d3d;
+    color: #ffffff;
+  }
+
+  .text .star-circle {
+    position: absolute;
+    width: 552px;
+    height: 237px;
+    left: 50%;
+    transform: translateX(-30%) translateY(+155%);
+  }
+
+  .text .star-icon {
+    position: absolute;
+    width: 148px;
+    height: 111.5px;
+    transform: translateX(-450%) translateY(+90%);
+  }
+
+  /* Footer Credit */
+  .credit {
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 16px;
+    color: #3d3d3d;
+  }
